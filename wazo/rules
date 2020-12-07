@@ -11,8 +11,8 @@ case "$1" in
         ;;
 
     install)
-        /bin/bash <(curl -Ss https://my-netdata.io/kickstart.sh) --no-updates --disable-telemetry --dont-wait
-        /usr/libexec/netdata/plugins.d/fping.plugin install
+	/bin/bash <(curl -Ss https://my-netdata.io/kickstart.sh) --no-updates --disable-telemetry --dont-wait
+	/usr/libexec/netdata/plugins.d/fping.plugin install
         ;;
 
     uninstall)
