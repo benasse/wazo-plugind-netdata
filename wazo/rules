@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Copyright 2020 Benoît Stahl
 # SPDX-License-Identifier: GPL-3.0+
 
@@ -11,7 +11,7 @@ case "$1" in
         ;;
 
     install)
-        bash <(curl -Ss https://my-netdata.io/kickstart.sh) --no-updates --disable-telemetry --dont-wait
+        /bin/bash <(curl -Ss https://my-netdata.io/kickstart.sh) --no-updates --disable-telemetry --dont-wait
         /usr/libexec/netdata/plugins.d/fping.plugin install
         ;;
 
