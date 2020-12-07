@@ -1,0 +1,7 @@
+name: wazo-plugind-netdata
+namespace: potoo
+version: 0.0.1
+author: Benoît Stahl
+display_name: wazo-plugind-netdata
+description: This plugin enable and configure netdata on a wazo stack
+homepage: https://github.com/benasse/wazo-plugind-netdata
