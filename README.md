@@ -1,4 +1,4 @@
-# wazo-plugind-prometheus-local
+# wazo-plugind-netdata
 ```
 ## not working anymore wazo plugind-cli can't use main branch of a git repository
 apt install wazo-plugind-cli
