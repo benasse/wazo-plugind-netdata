@@ -4,7 +4,9 @@
 apt install wazo-plugind-cli
 wazo-plugind-cli -c 'install git https://github.com/benasse/wazo-plugind-netdata.git'
 ```
-## asterisk stats via prometheus exporter
+## asterisk statistiques
+Some logics of the netdata prometheus plugin are not configurable.
 
-For astersik statistics to be displayed correctly in netdata, at the moment it is
-required a patched version of netdata go plugins.
+It is for the moment necessary to use a patched version of `go.d.plugin`
+
+More information available here: [#531](https://github.com/netdata/go.d.plugin/issues/531)
