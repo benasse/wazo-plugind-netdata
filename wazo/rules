@@ -8,12 +8,10 @@ case "$1" in
 
     package)
         cp -R etc ${pkgdir}
-        cp -R usr ${pkgdir}
         ;;
 
     install)
         /bin/bash <(curl -Ss https://my-netdata.io/kickstart.sh) --no-updates --disable-telemetry --dont-wait
-	/bin/chown root:netdata /usr/libexec/netdata/plugins.d/go.d.plugin
         /usr/libexec/netdata/plugins.d/fping.plugin install
         ;;
 
