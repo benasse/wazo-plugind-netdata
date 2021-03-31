@@ -5,3 +5,20 @@ author: Benoît Stahl
 display_name: wazo-plugind-netdata
 description: This plugin enable and configure netdata on a wazo stack
 homepage: https://github.com/benasse/wazo-plugind-netdata
+debian_depends:
+ - autoconf
+ - autoconf-archive
+ - autogen
+ - automake
+ - cmake
+ - libelf-dev
+ - libjson-c-dev
+ - libjudy-dev
+ - liblz4-dev
+ - libmnl-dev
+ - libssl-dev
+ - libtool
+ - libuv1-dev
+ - pkg-config
+ - uuid-dev
+ - zlib1g-dev
