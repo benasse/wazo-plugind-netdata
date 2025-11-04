@@ -11,12 +11,12 @@ case "$1" in
         ;;
 
     install)
-        /usr/bin/curl https://my-netdata.io/kickstart.sh > /tmp/netdata-kickstart.sh && sh /tmp/netdata-kickstart.sh --no-updates --stable-channel --disable-telemetry
+        /usr/bin/curl https://get.netdata.cloud/kickstart.sh > /tmp/netdata-kickstart.sh && sh /tmp/netdata-kickstart.sh --no-updates --stable-channel --disable-telemetry
         /usr/libexec/netdata/plugins.d/fping.plugin install
         ;;
 
     uninstall)
-	/usr/libexec/netdata/netdata-uninstaller.sh --yes --force --env /etc/netdata/.environment
+        /usr/libexec/netdata/netdata-uninstaller.sh --yes --force --env /etc/netdata/.environment
         ;;
 
     *)
